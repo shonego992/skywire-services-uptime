@@ -1,0 +1,36 @@
+[database]
+user = "postgres"
+password = "supersecretpass"
+host = "localhost"
+port = 5432
+name = "skywire_uptime"
+sslmode = "disable"
+migration-source = "file://script/node-checker-migration"
+log-mode = true
+
+[config]
+make-uptimes-for-previous-months = false
+
+[server]
+ip = "127.0.0.1"
+port = 8085
+node-check-api = "http://discovery.skycoin.net:8001/conn/getAll"
+refresh-interval = "5m"
+uptime-threshold = "1m"
+
+[c0rs]
+allowed-origins = [
+    "http://localhost:4200"
+]
+allowed-headers = [
+    "Content-Type",
+    "Authorization",
+    "Origin"
+]
+allowed-methods = [
+    "GET",
+    "POST",
+    "PATCH"
+]
+allow-all = false
+max-age = "12h"

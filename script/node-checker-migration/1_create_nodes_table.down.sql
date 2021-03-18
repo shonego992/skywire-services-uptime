@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS node cascade;
+DROP TABLE IF EXISTS uptime;

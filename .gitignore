@@ -1,0 +1,34 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Mac OS related files
+*.DS_Store
+
+# Test binary, build with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Vendor files except configuration
+Gopkg.lock 
+
+# Config
+**/*config.toml
+
+# Editor specific files
+.idea/
+.vscode/
+
+# NPM related files
+**/node_modules
+**/dist
+**/package-lock.json 
+
+# Swagger related files
+**/docs/
+**/web/files/
